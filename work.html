@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RijVaardig Voorbeeld — Succesverhalen</title>
+  <meta name="description" content="Ontdek de succesverhalen van onze leerlingen. Van rijbewijs B tot motorrijbewijs — lees hoe zij geslaagd zijn bij RijVaardig Voorbeeld in Amsterdam.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-strip"></div>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <a href="index.html" class="header-logo visible" aria-label="Home">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="60" rx="4" fill="var(--color-primary)" opacity="0.9"/>
+        <text x="100" y="38" text-anchor="middle" fill="var(--color-text)" font-family="var(--font-display)" font-size="24" font-weight="900">LOGO</text>
+      </svg>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html" class="active">Succesverhalen</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">Over Ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Menu">
+      <span class="label-open">Menu</span>
+      <span class="label-close">Close</span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Succesverhalen</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ======================== MAIN CONTENT ======================== -->
+  <div class="page-wrapper">
+    <div class="page-bg">
+
+      <!-- ====== PAGE HERO ====== -->
+      <section class="section-padding" style="padding-top:20vh;padding-bottom:var(--sp-5)">
+        <h1 class="page-hero-title font-display" style="font-size:clamp(2.5rem,8vw,7rem);line-height:0.95">
+          Succesverhalen
+        </h1>
+        <p class="page-hero-desc text-s" style="max-width:35rem;margin-top:var(--sp-4);opacity:0.7">
+          Elke leerling heeft een eigen verhaal. Van zenuwachtige starter tot zelfverzekerde bestuurder — dit zijn de mensen die bij ons geslaagd zijn.
+        </p>
+      </section>
+
+      <!-- ====== FILTERS ====== -->
+      <section class="section-padding section-reveal" style="padding-bottom:var(--sp-4)">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Alles</button>
+          <button class="filter-btn" data-filter="branding">Rijbewijs B</button>
+          <button class="filter-btn" data-filter="web">Motorrijbewijs A</button>
+          <button class="filter-btn" data-filter="video">Spoedcursus</button>
+          <button class="filter-btn" data-filter="campagne">Faalangst</button>
+        </div>
+      </section>
+
+      <!-- ====== WORK GRID ====== -->
+      <section class="section-padding" style="padding-bottom:var(--sp-8);min-height:300px">
+        <div class="work-grid grid-3">
+
+          <!-- Succesverhaal 1 -->
+          <div class="grid-item-enter" data-category="branding">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Lisa van den Berg — geslaagd rijbewijs B</div>
+              </div>
+              <div class="case-card-info">
+                <span>Lisa van den Berg — Rijbewijs B</span>
+                <span>Amsterdam-Zuid</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 2 -->
+          <div class="grid-item-enter" data-category="web">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Kevin Okafor — geslaagd motorrijbewijs A</div>
+              </div>
+              <div class="case-card-info">
+                <span>Kevin Okafor — Motorrijbewijs A</span>
+                <span>Amsterdam-Oost</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 3 -->
+          <div class="grid-item-enter" data-category="video">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Fatima El Amrani — geslaagd spoedcursus</div>
+              </div>
+              <div class="case-card-info">
+                <span>Fatima El Amrani — Spoedcursus</span>
+                <span>Amsterdam-West</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 4 -->
+          <div class="grid-item-enter" data-category="campagne">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Thomas Bakker — geslaagd na faalangsttraining</div>
+              </div>
+              <div class="case-card-info">
+                <span>Thomas Bakker — Faalangsttraining</span>
+                <span>Amsterdam-Noord</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 5 -->
+          <div class="grid-item-enter" data-category="branding">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Sanne de Vries — geslaagd rijbewijs B</div>
+              </div>
+              <div class="case-card-info">
+                <span>Sanne de Vries — Rijbewijs B</span>
+                <span>Amstelveen</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 6 -->
+          <div class="grid-item-enter" data-category="web">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Daan Jansen — geslaagd motorrijbewijs A</div>
+              </div>
+              <div class="case-card-info">
+                <span>Daan Jansen — Motorrijbewijs A</span>
+                <span>Amsterdam-Centrum</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 7 -->
+          <div class="grid-item-enter" data-category="video">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Priya Sharma — geslaagd spoedcursus</div>
+              </div>
+              <div class="case-card-info">
+                <span>Priya Sharma — Spoedcursus</span>
+                <span>Diemen</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 8 -->
+          <div class="grid-item-enter" data-category="campagne">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Marco Visser — geslaagd na faalangsttraining</div>
+              </div>
+              <div class="case-card-info">
+                <span>Marco Visser — Faalangsttraining</span>
+                <span>Amsterdam-West</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Succesverhaal 9 -->
+          <div class="grid-item-enter" data-category="branding">
+            <a href="#" class="case-card">
+              <div class="case-card-image">
+                <div class="placeholder-img">Julia Hendriks — geslaagd rijbewijs B</div>
+              </div>
+              <div class="case-card-info">
+                <span>Julia Hendriks — Rijbewijs B</span>
+                <span>Amsterdam-Zuid</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer logo divider -->
+      <div class="footer-logo-wrap">
+        <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <text x="720" y="160" text-anchor="middle" font-family="var(--font-display)" font-size="180" font-weight="900" fill="currentColor" opacity="0.15">RIJVAARDIG</text>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="grid-2">
+      <div>
+        <h2 class="footer-heading">Samen naar jouw <span class="accent">rijbewijs</span></h2>
+      </div>
+      <div>
+        <div class="footer-contact">
+          <a href="mailto:info@rijvaardigvoorbeeld.nl">info@rijvaardigvoorbeeld.nl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RijVaardig Voorbeeld</span>
+      <div><a href="#">Privacy</a> &middot; <a href="#">Voorwaarden</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- StudioLee credit badge -->
+  <a href="https://www.studiolee.nl" target="_blank" rel="nofollow noopener" style="position:fixed;bottom:14px;right:14px;z-index:9999;background:rgba(0,0,0,.85);color:#fff;padding:9px 18px;border-radius:99px;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:6px" onmouseover="this.style.transform='translateY(-2px)';this.style.background='#cdfb52';this.style.color='#0a0a0a'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(0,0,0,.85)';this.style.color='#fff'">Speciaal gemaakt voor rijscholen door StudioLee.nl &nearr;</a>
+
+</body>
+</html>

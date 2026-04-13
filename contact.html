@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nl" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RijVaardig Voorbeeld — Contact</title>
+  <meta name="description" content="Neem contact op met RijVaardig Voorbeeld in Amsterdam. Boek een proefles, vraag informatie aan of bel ons voor advies over rijlessen.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-strip"></div>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <a href="index.html" class="header-logo visible" aria-label="Home">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="60" rx="4" fill="var(--color-primary)" opacity="0.9"/>
+        <text x="100" y="38" text-anchor="middle" fill="var(--color-text)" font-family="var(--font-display)" font-size="24" font-weight="900">LOGO</text>
+      </svg>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Succesverhalen</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">Over Ons</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Menu">
+      <span class="label-open">Menu</span>
+      <span class="label-close">Close</span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Succesverhalen</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ======================== MAIN CONTENT ======================== -->
+  <div class="page-wrapper">
+    <div class="page-bg">
+
+      <!-- ====== CONTACT SECTION ====== -->
+      <section class="contact-section">
+        <div class="grid-2" style="align-items:start">
+
+          <!-- Left: heading + direct contact -->
+          <div>
+            <h1 class="contact-heading page-hero-title">
+              Laten we<br>rijden
+            </h1>
+
+            <div class="page-hero-desc" style="margin-top:var(--sp-6)">
+              <div class="footer-contact">
+                <a href="tel:+31201234567" class="text-xs">020 - 123 4567</a>
+                <a href="mailto:info@rijvaardigvoorbeeld.nl" class="text-xs">info@rijvaardigvoorbeeld.nl</a>
+              </div>
+
+              <div style="margin-top:var(--sp-6)">
+                <p class="text-xxs opacity-50">Kantoor & leslocatie</p>
+                <p class="text-xs" style="margin-top:var(--sp-2)">Overtoom 87<br>1054 HB, Amsterdam</p>
+              </div>
+
+              <div style="margin-top:var(--sp-5)">
+                <p class="text-xxs opacity-50">Openingstijden</p>
+                <p class="text-xs" style="margin-top:var(--sp-2)">Ma - Vr: 08:00 - 20:00<br>Za: 09:00 - 17:00</p>
+              </div>
+
+              <div style="margin-top:var(--sp-5)">
+                <p class="text-xxs opacity-50">Volg ons</p>
+                <div style="display:flex;gap:var(--sp-4);margin-top:var(--sp-2)">
+                  <a href="#" class="text-xs" style="transition:color 0.3s">Instagram</a>
+                  <a href="#" class="text-xs" style="transition:color 0.3s">Facebook</a>
+                  <a href="#" class="text-xs" style="transition:color 0.3s">Google</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: contact form -->
+          <div>
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label class="form-label" for="name">Uw naam</label>
+                <input class="form-input" type="text" id="name" name="name" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">E-mailadres</label>
+                <input class="form-input" type="email" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Telefoonnummer</label>
+                <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="rijbewijs">Type rijbewijs</label>
+                <select class="form-input" id="rijbewijs" name="rijbewijs" required style="appearance:auto;cursor:pointer">
+                  <option value="" disabled selected>Kies een optie...</option>
+                  <option value="rijbewijs-b">Rijbewijs B (auto)</option>
+                  <option value="rijbewijs-a">Rijbewijs A (motor)</option>
+                  <option value="spoedcursus">Spoedcursus</option>
+                  <option value="faalangst">Faalangsttraining</option>
+                  <option value="opfriscursus">Opfriscursus</option>
+                  <option value="theorie">Theorie-examen begeleiding</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="leslocatie">Gewenste leslocatie</label>
+                <select class="form-input" id="leslocatie" name="leslocatie" style="appearance:auto;cursor:pointer">
+                  <option value="" disabled selected>Kies een locatie...</option>
+                  <option value="amsterdam-centrum">Amsterdam-Centrum</option>
+                  <option value="amsterdam-zuid">Amsterdam-Zuid</option>
+                  <option value="amsterdam-west">Amsterdam-West</option>
+                  <option value="amsterdam-oost">Amsterdam-Oost</option>
+                  <option value="amsterdam-noord">Amsterdam-Noord</option>
+                  <option value="amstelveen">Amstelveen</option>
+                  <option value="diemen">Diemen</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Uw bericht</label>
+                <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Vertel ons over uw wensen, ervaring of vragen..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">
+                Verstuur aanvraag <span>&rarr;</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====== TICKER ====== -->
+      <div class="ticker-wrap" style="--duration:25s">
+        <div class="ticker">
+          <span class="ticker-item">Geduld</span>
+          <span class="ticker-dot"></span>
+          <span class="ticker-item"><em>Veiligheid</em></span>
+          <span class="ticker-dot"></span>
+          <span class="ticker-item">Persoonlijk</span>
+          <span class="ticker-dot"></span>
+          <span class="ticker-item"><em>Rijvaardig</em></span>
+          <span class="ticker-dot"></span>
+        </div>
+      </div>
+
+      <!-- Footer logo divider -->
+      <div class="footer-logo-wrap">
+        <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <text x="720" y="160" text-anchor="middle" font-family="var(--font-display)" font-size="180" font-weight="900" fill="currentColor" opacity="0.15">RIJVAARDIG</text>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="grid-2">
+      <div>
+        <h2 class="footer-heading">Samen naar jouw <span class="accent">rijbewijs</span></h2>
+      </div>
+      <div>
+        <div class="footer-contact">
+          <a href="tel:+31201234567">020 - 123 4567</a>
+          <a href="mailto:info@rijvaardigvoorbeeld.nl">info@rijvaardigvoorbeeld.nl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RijVaardig Voorbeeld</span>
+      <div><a href="#">Privacy</a> &middot; <a href="#">Voorwaarden</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- StudioLee credit badge -->
+  <a href="https://www.studiolee.nl" target="_blank" rel="nofollow noopener" style="position:fixed;bottom:14px;right:14px;z-index:9999;background:rgba(0,0,0,.85);color:#fff;padding:9px 18px;border-radius:99px;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:6px" onmouseover="this.style.transform='translateY(-2px)';this.style.background='#cdfb52';this.style.color='#0a0a0a'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(0,0,0,.85)';this.style.color='#fff'">Speciaal gemaakt voor rijscholen door StudioLee.nl &nearr;</a>
+
+</body>
+</html>

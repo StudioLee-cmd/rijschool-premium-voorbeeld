@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RijVaardig Voorbeeld — Blog</title>
+  <meta name="description" content="Lees onze artikelen over rijlessen, theorie-examen, rijtips en het laatste rijschoolnieuws. Praktische kennis van ervaren instructeurs uit Amsterdam.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-strip"></div>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <a href="index.html" class="header-logo visible" aria-label="Home">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="60" rx="4" fill="var(--color-primary)" opacity="0.9"/>
+        <text x="100" y="38" text-anchor="middle" fill="var(--color-text)" font-family="var(--font-display)" font-size="24" font-weight="900">LOGO</text>
+      </svg>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Succesverhalen</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">Over Ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Menu">
+      <span class="label-open">Menu</span>
+      <span class="label-close">Close</span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Succesverhalen</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ======================== MAIN CONTENT ======================== -->
+  <div class="page-wrapper">
+    <div class="page-bg">
+
+      <!-- ====== PAGE HERO ====== -->
+      <section class="section-padding" style="padding-top:20vh;padding-bottom:var(--sp-5)">
+        <h1 class="page-hero-title font-display" style="font-size:clamp(3rem,10vw,8rem);line-height:0.92;letter-spacing:-0.02em">
+          Kennis
+        </h1>
+        <p class="page-hero-desc text-s" style="max-width:40rem;margin-top:var(--sp-4);opacity:0.7">
+          Artikelen over rijlessen, theorie, rijtips en nieuws uit de rijschoolwereld. Praktische kennis van instructeurs met jarenlange ervaring.
+        </p>
+      </section>
+
+      <!-- ====== CLUSTER OVERVIEW (topic clusters) ====== -->
+      <section class="section-padding section-reveal" style="padding-bottom:var(--sp-7)">
+        <div class="cluster-grid">
+
+          <!-- Cluster 1: Rijlessen -->
+          <a href="#" class="cluster-card" data-cluster-filter="cluster-rijlessen">
+            <div class="cluster-icon">
+              <iconify-icon icon="lucide:car" width="32" height="32"></iconify-icon>
+            </div>
+            <h3 class="cluster-title">Rijlessen</h3>
+            <span class="cluster-count">3 artikelen</span>
+          </a>
+
+          <!-- Cluster 2: Theorie -->
+          <a href="#" class="cluster-card" data-cluster-filter="cluster-theorie">
+            <div class="cluster-icon">
+              <iconify-icon icon="lucide:book-open" width="32" height="32"></iconify-icon>
+            </div>
+            <h3 class="cluster-title">Theorie</h3>
+            <span class="cluster-count">2 artikelen</span>
+          </a>
+
+          <!-- Cluster 3: Tips -->
+          <a href="#" class="cluster-card" data-cluster-filter="cluster-tips">
+            <div class="cluster-icon">
+              <iconify-icon icon="lucide:lightbulb" width="32" height="32"></iconify-icon>
+            </div>
+            <h3 class="cluster-title">Tips</h3>
+            <span class="cluster-count">2 artikelen</span>
+          </a>
+
+          <!-- Cluster 4: Nieuws -->
+          <a href="#" class="cluster-card" data-cluster-filter="cluster-nieuws">
+            <div class="cluster-icon">
+              <iconify-icon icon="lucide:newspaper" width="32" height="32"></iconify-icon>
+            </div>
+            <h3 class="cluster-title">Nieuws</h3>
+            <span class="cluster-count">2 artikelen</span>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ====== CLUSTER FILTERS ====== -->
+      <section class="section-padding" style="padding-bottom:var(--sp-4)">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Alle Artikelen</button>
+          <button class="filter-btn" data-filter="cluster-rijlessen">Rijlessen</button>
+          <button class="filter-btn" data-filter="cluster-theorie">Theorie</button>
+          <button class="filter-btn" data-filter="cluster-tips">Tips</button>
+          <button class="filter-btn" data-filter="cluster-nieuws">Nieuws</button>
+        </div>
+      </section>
+
+      <!-- ====== BLOG ARTICLES GRID ====== -->
+      <section class="section-padding" style="padding-bottom:var(--sp-8);min-height:300px">
+        <div class="work-grid blog-grid grid-3">
+
+          <!-- PILLAR ARTICLE: Rijlessen (featured/large) -->
+          <div class="grid-item-enter blog-item blog-item--pillar" data-category="cluster-rijlessen" style="grid-column: span 2">
+            <a href="blog/artikel.html" class="blog-card blog-card--featured">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Hoofdartikel — complete gids rijlessen</div>
+                <span class="blog-badge blog-badge--pillar">Pillar</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span class="blog-cluster-tag">Rijlessen</span>
+                  <span>8 april 2026 &middot; 14 min lezen</span>
+                </div>
+                <h2 class="blog-card-title blog-card-title--large">De Complete Gids voor Rijlessen in Amsterdam (2026)</h2>
+                <p class="blog-card-excerpt">Alles wat je moet weten over het halen van je rijbewijs in Amsterdam. Van de eerste les tot het praktijkexamen — kosten, tijdlijn, tips en veelgemaakte fouten.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 2: Rijlessen -->
+          <div class="grid-item-enter blog-item" data-category="cluster-rijlessen">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Spoedcursus vs reguliere lessen</div>
+                <span class="blog-badge">Rijlessen</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>4 april 2026 &middot; 7 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">Spoedcursus of reguliere rijlessen? Zo maak je de juiste keuze</h3>
+                <p class="blog-card-excerpt">De voor- en nadelen van een intensieve opleiding versus wekelijkse lessen. Welke past bij jouw situatie en leerstijl?</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 3: Theorie -->
+          <div class="grid-item-enter blog-item" data-category="cluster-theorie">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Theorie-examen oefenen</div>
+                <span class="blog-badge">Theorie</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>1 april 2026 &middot; 9 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">In een keer slagen voor je theorie-examen: 10 bewezen tips</h3>
+                <p class="blog-card-excerpt">Van de beste oefenmethodes tot slim plannen van je examendatum. Zo verhoog je je slagingskans drastisch.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 4: Theorie -->
+          <div class="grid-item-enter blog-item" data-category="cluster-theorie">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Gevaarherkenning oefenen</div>
+                <span class="blog-badge">Theorie</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>28 maart 2026 &middot; 6 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">Gevaarherkenning: waar de meeste leerlingen op struikelen</h3>
+                <p class="blog-card-excerpt">Gevaarherkenning is het lastigste onderdeel van het theorie-examen. Wij leggen uit waarom en hoe je het traint.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 5: Tips -->
+          <div class="grid-item-enter blog-item" data-category="cluster-tips">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Faalangst overwinnen achter het stuur</div>
+                <span class="blog-badge">Tips</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>25 maart 2026 &middot; 8 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">Faalangst achter het stuur: zo overwin je het stap voor stap</h3>
+                <p class="blog-card-excerpt">Rijangst komt vaker voor dan je denkt. Onze faalangstcoach deelt praktische technieken om weer ontspannen te rijden.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 6: Rijlessen -->
+          <div class="grid-item-enter blog-item" data-category="cluster-rijlessen">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Motorrijbewijs halen stap voor stap</div>
+                <span class="blog-badge">Rijlessen</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>22 maart 2026 &middot; 10 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">Motorrijbewijs halen in 2026: alles over de AVB en AVD</h3>
+                <p class="blog-card-excerpt">Van de Algemene Voertuig Beheersing tot het praktijkexamen op de openbare weg. Een complete gids voor toekomstige motorrijders.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 7: Tips -->
+          <div class="grid-item-enter blog-item" data-category="cluster-tips">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Opfriscursus wanneer nodig</div>
+                <span class="blog-badge">Tips</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>18 maart 2026 &middot; 5 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">Lang niet gereden? 5 signalen dat een opfriscursus slim is</h3>
+                <p class="blog-card-excerpt">Na jaren niet rijden voelt het stuur onwennig. Herken de signalen en ontdek hoe snel je weer op niveau bent.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 8: Nieuws -->
+          <div class="grid-item-enter blog-item" data-category="cluster-nieuws">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Nieuwe examenregels CBR 2026</div>
+                <span class="blog-badge">Nieuws</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>15 maart 2026 &middot; 4 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">CBR examenregels 2026: wat verandert er voor jou?</h3>
+                <p class="blog-card-excerpt">Het CBR heeft nieuwe richtlijnen aangekondigd. Wij zetten de belangrijkste wijzigingen voor leerlingen op een rij.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Article 9: Nieuws -->
+          <div class="grid-item-enter blog-item" data-category="cluster-nieuws">
+            <a href="blog/artikel.html" class="blog-card">
+              <div class="blog-card-image">
+                <div class="placeholder-img" style="aspect-ratio:16/9">Kosten rijbewijs vergelijken</div>
+                <span class="blog-badge">Nieuws</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span>12 maart 2026 &middot; 6 min lezen</span>
+                </div>
+                <h3 class="blog-card-title">Wat kost een rijbewijs in 2026? Eerlijk overzicht van alle kosten</h3>
+                <p class="blog-card-excerpt">Rijlessen, theorie, examens, gezondheidsverklaring — alle kosten op een rij zodat je niet voor verrassingen komt te staan.</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer logo divider -->
+      <div class="footer-logo-wrap">
+        <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <text x="720" y="160" text-anchor="middle" font-family="var(--font-display)" font-size="180" font-weight="900" fill="currentColor" opacity="0.15">RIJVAARDIG</text>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="grid-2">
+      <div>
+        <h2 class="footer-heading">Samen naar jouw <span class="accent">rijbewijs</span></h2>
+      </div>
+      <div>
+        <div class="footer-contact">
+          <a href="mailto:info@rijvaardigvoorbeeld.nl">info@rijvaardigvoorbeeld.nl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RijVaardig Voorbeeld</span>
+      <div><a href="#">Privacy</a> &middot; <a href="#">Voorwaarden</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- StudioLee credit badge -->
+  <a href="https://www.studiolee.nl" target="_blank" rel="nofollow noopener" style="position:fixed;bottom:14px;right:14px;z-index:9999;background:rgba(0,0,0,.85);color:#fff;padding:9px 18px;border-radius:99px;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:6px" onmouseover="this.style.transform='translateY(-2px)';this.style.background='#cdfb52';this.style.color='#0a0a0a'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(0,0,0,.85)';this.style.color='#fff'">Speciaal gemaakt voor rijscholen door StudioLee.nl &nearr;</a>
+
+</body>
+</html>

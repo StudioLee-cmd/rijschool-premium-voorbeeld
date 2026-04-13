@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RijVaardig Voorbeeld — Over Ons</title>
+  <meta name="description" content="Maak kennis met het team van RijVaardig Voorbeeld. 12 ervaren instructeurs in Amsterdam die geloven in geduld, veiligheid en persoonlijke begeleiding.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-strip"></div>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <a href="index.html" class="header-logo visible" aria-label="Home">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="60" rx="4" fill="var(--color-primary)" opacity="0.9"/>
+        <text x="100" y="38" text-anchor="middle" fill="var(--color-text)" font-family="var(--font-display)" font-size="24" font-weight="900">LOGO</text>
+      </svg>
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Succesverhalen</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html" class="active">Over Ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Menu">
+      <span class="label-open">Menu</span>
+      <span class="label-close">Close</span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Succesverhalen</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ======================== MAIN CONTENT ======================== -->
+  <div class="page-wrapper">
+    <div class="page-bg" style="background-color:var(--color-primary)">
+
+      <!-- ====== PAGE HERO ====== -->
+      <section class="section-padding" style="padding-top:20vh;padding-bottom:var(--sp-6)">
+        <h1 class="page-hero-title font-display" style="font-size:clamp(2.5rem,8vw,7rem);line-height:0.95">
+          Geduld, Veiligheid & Persoonlijk
+        </h1>
+      </section>
+
+      <!-- ====== SERVICES LIST (Company Values & Approach) ====== -->
+      <section class="services-section" style="padding-top:0">
+
+        <!-- Value 1: Geduld -->
+        <div class="service-item">
+          <h4 class="service-title">Geduld als Fundament</h4>
+          <div class="service-desc text-xs">
+            <p>Iedereen leert in een ander tempo. Onze instructeurs nemen de tijd die nodig is — zonder druk, zonder oordeel. Of je nu 18 bent of 58, wij passen ons aan jouw tempo aan.</p>
+            <ul>
+              <li>Geen standaard lespakket, maar maatwerk</li>
+              <li>Extra herhaling waar nodig, zonder meerkosten</li>
+              <li>Rustige en duidelijke uitleg bij elke stap</li>
+              <li>Altijd dezelfde vaste instructeur</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Value 2: Veiligheid -->
+        <div class="service-item">
+          <h4 class="service-title">Veiligheid Voorop</h4>
+          <div class="service-desc text-xs">
+            <p>Veilig rijden begint bij veilig leren. Al onze lesauto's zijn uitgerust met dubbele bediening en worden maandelijks gecontroleerd. Onze instructeurs zijn BOVAG-gecertificeerd.</p>
+            <ul>
+              <li>Moderne lesauto's met de nieuwste veiligheidssystemen</li>
+              <li>Instructeurs met WRM-certificering</li>
+              <li>Lessen in alle verkeerssituaties: stad, snelweg, donker</li>
+              <li>Defensief rijden als kernvaardigheid</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Value 3: Persoonlijk -->
+        <div class="service-item">
+          <h4 class="service-title">Persoonlijke Aanpak</h4>
+          <div class="service-desc text-xs">
+            <p>Bij ons ben je geen nummer. Elke leerling krijgt een persoonlijk lesplan op basis van ervaring, leerstijl en doel. Je instructeur kent jouw sterke punten en weet precies waar je aan moet werken.</p>
+            <ul>
+              <li>Intake-gesprek voor elke nieuwe leerling</li>
+              <li>Persoonlijk voortgangsoverzicht na elke les</li>
+              <li>Flexibele planning: ochtend, middag of avond</li>
+              <li>Ophaalservice in heel Amsterdam</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Value 4: Resultaat -->
+        <div class="service-item">
+          <h4 class="service-title">Resultaat dat Telt</h4>
+          <div class="service-desc text-xs">
+            <p>Sinds 2010 hebben meer dan 2.500 leerlingen hun rijbewijs bij ons gehaald. Ons slagingspercentage ligt ruim boven het landelijk gemiddelde — daar zijn we trots op.</p>
+            <ul>
+              <li>Slagingspercentage eerste keer: boven de 70%</li>
+              <li>Gemiddeld 30-35 lessen tot examenniveau</li>
+              <li>Specialisaties: faalangst, spoedcursus, motorrijbewijs</li>
+              <li>Positieve reviews op Google en Trustpilot</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== TEAM SECTION ====== -->
+      <section class="section-padding">
+
+        <!-- Team member 1: Oprichter -->
+        <div class="team-block">
+          <div class="grid-2" style="align-items:start;gap:var(--grid-gap);padding-top:var(--sp-5)">
+            <div class="team-image">
+              <div class="placeholder-img" style="aspect-ratio:1/1">Oprichter portretfoto</div>
+            </div>
+            <div>
+              <h2 class="team-name">Erik van Dam</h2>
+              <h3 class="team-role">Oprichter & Hoofd-instructeur</h3>
+              <p class="team-bio text-s">
+                Erik richtte RijVaardig Voorbeeld op in 2010 na 15 jaar als rij-instructeur bij verschillende rijscholen in Amsterdam. Zijn frustratie met de standaardaanpak dreef hem om een school te bouwen waar geduld en persoonlijke aandacht centraal staan. Erik is nog dagelijks actief als instructeur en kent elke leerling bij naam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team member 2: Het team -->
+        <div class="team-block">
+          <div class="grid-2" style="align-items:start;gap:var(--grid-gap);padding-top:var(--sp-5)">
+            <div style="order:1">
+              <h2 class="team-name">Het RijVaardig Team</h2>
+              <h3 class="team-role">12 Ervaren Instructeurs</h3>
+              <p class="team-bio text-s">
+                Achter elk geslaagd examen staat een instructeur die er alles aan heeft gedaan. Ons vaste team van 12 instructeurs — waaronder 2 faalangstcoaches en 3 motorinstructeurs — werkt al jaren samen. Korte lijnen, een gedeelde passie voor verkeersveiligheid en een deur die altijd open staat voor vragen. Dat is de RijVaardig manier.
+              </p>
+            </div>
+            <div class="team-image" style="order:2">
+              <div class="placeholder-img" style="aspect-ratio:1/1">Teamfoto instructeurs</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Footer logo divider -->
+      <div class="footer-logo-wrap">
+        <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <text x="720" y="160" text-anchor="middle" font-family="var(--font-display)" font-size="180" font-weight="900" fill="currentColor" opacity="0.15">RIJVAARDIG</text>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="grid-2">
+      <div>
+        <h2 class="footer-heading">Samen naar jouw <span class="accent">rijbewijs</span></h2>
+      </div>
+      <div>
+        <div class="footer-contact">
+          <a href="mailto:info@rijvaardigvoorbeeld.nl">info@rijvaardigvoorbeeld.nl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RijVaardig Voorbeeld</span>
+      <div><a href="#">Privacy</a> &middot; <a href="#">Voorwaarden</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- StudioLee credit badge -->
+  <a href="https://www.studiolee.nl" target="_blank" rel="nofollow noopener" style="position:fixed;bottom:14px;right:14px;z-index:9999;background:rgba(0,0,0,.85);color:#fff;padding:9px 18px;border-radius:99px;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:6px" onmouseover="this.style.transform='translateY(-2px)';this.style.background='#cdfb52';this.style.color='#0a0a0a'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(0,0,0,.85)';this.style.color='#fff'">Speciaal gemaakt voor rijscholen door StudioLee.nl &nearr;</a>
+
+</body>
+</html>

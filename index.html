@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl" class="lenis lenis-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RijVaardig Voorbeeld — Veilig leren rijden in Amsterdam</title>
+  <meta name="description" content="RijVaardig Voorbeeld is jouw rijschool in Amsterdam. Al sinds 2010 leiden wij leerlingen op met geduld, veiligheid en persoonlijke aandacht. Boek nu je proefles.">
+
+  <!-- Fonts: GC Vank (display) + Salty Ages (accent) self-hosted via @font-face in CSS
+       Inter loaded from Google for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconify for niche icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Black backdrop strip behind header -->
+  <div class="bg-strip"></div>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="header">
+    <a href="index.html" class="header-logo" aria-label="Home">
+      <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="60" rx="4" fill="var(--color-primary)" opacity="0.9"/>
+        <text x="100" y="38" text-anchor="middle" fill="var(--color-text)" font-family="var(--font-display)" font-size="24" font-weight="900">LOGO</text>
+      </svg>
+    </a>
+
+    <!-- Desktop navigation -->
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="work.html">Succesverhalen</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">Over Ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button class="menu-btn" aria-label="Menu">
+      <span class="label-open">Menu</span>
+      <span class="label-close">Close</span>
+    </button>
+  </header>
+
+  <!-- ======================== MOBILE MENU ======================== -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="work.html">Succesverhalen</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ======================== MAIN CONTENT ======================== -->
+  <div class="page-wrapper">
+    <div class="page-bg" data-default-bg="var(--color-bg)">
+
+      <!-- ====== RIJSCHOOL TITLE BLOCK BANNER ====== -->
+      <section class="banner-niche" data-bg-color="var(--color-bg)">
+        <div class="banner-niche__grid"></div>
+
+        <!-- Top-right rotated stamp -->
+        <div class="banner-niche__stamp">
+          <iconify-icon icon="lucide:car"></iconify-icon>
+          <div class="banner-niche__stamp-text">
+            <span>RIJSCHOLEN</span>
+            <span>SINDS 2010</span>
+          </div>
+        </div>
+
+        <!-- Big outline + filled title -->
+        <h1 class="banner-niche__title">
+          <span class="banner-niche__title-outline">RIJVAARDIG</span>
+          <span class="banner-niche__title-filled">VOORBEELD</span>
+        </h1>
+
+        <!-- Technical dimension line -->
+        <div class="banner-niche__dimline" aria-hidden="true">
+          <span class="banner-niche__dim-tick"></span>
+          <span class="banner-niche__dim-segment"></span>
+          <span class="banner-niche__dim-label">AMSTERDAM — NL</span>
+          <span class="banner-niche__dim-segment"></span>
+          <span class="banner-niche__dim-label">12 INSTRUCTEURS</span>
+          <span class="banner-niche__dim-segment"></span>
+          <span class="banner-niche__dim-label">2500+ GESLAAGDEN</span>
+          <span class="banner-niche__dim-segment"></span>
+          <span class="banner-niche__dim-tick"></span>
+        </div>
+
+        <!-- Tagline -->
+        <p class="banner-niche__tagline">
+          Voor de starters, de doorzetters, de zenuwachtige en de ambitieuze. Voor iedereen die veilig en zelfverzekerd de weg op wil — begeleid door een team van ervaren instructeurs die geloven in geduld en persoonlijke aandacht.
+        </p>
+      </section>
+
+      <!-- ====== HERO VIDEO / SHOWREEL ====== -->
+      <section class="section-padding section-reveal" style="padding-top:var(--sp-5);padding-bottom:var(--sp-5)">
+        <div class="hero-video">
+          <img src="images/hero.jpg" alt="RijVaardig Voorbeeld leerling rijdt door Amsterdam bij zonsondergang met instructeur" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover">
+        </div>
+      </section>
+
+      <!-- ====== TEXT REVEAL SECTION ====== -->
+      <section class="text-reveal-section" data-bg-color="var(--color-accent)">
+        <div class="grid-2" style="align-items:start">
+          <div class="text-reveal-content">
+            Wij geloven dat rijden meer is dan gas geven en remmen. Ons team van 12 ervaren instructeurs combineert pedagogisch inzicht met jarenlange praktijkervaring. Van eerste les tot slagen voor je examen — wij begeleiden je met geduld, structuur en een vleugje humor.
+          </div>
+          <div class="text-reveal-media">
+            <img src="images/craft.jpg" alt="Close-up: leerling achter het stuur tijdens rijles in Amsterdam" style="width:100%;display:block;aspect-ratio:1/1;object-fit:cover">
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== DIVIDER ====== -->
+      <div class="divider section-padding"></div>
+
+      <!-- ====== RIJSCHOOL QUOTE BANNER ====== -->
+      <section class="quote-niche section-reveal">
+        <div class="quote-niche__inner">
+          <div class="quote-niche__marks">
+            <iconify-icon icon="lucide:quote" class="quote-niche__mark"></iconify-icon>
+          </div>
+          <blockquote class="quote-niche__text">
+            Je rijbewijs is niet alleen een pasje — het is de <em>vrijheid om je eigen weg te kiezen.</em>
+          </blockquote>
+          <div class="quote-niche__rule" aria-hidden="true">
+            <span class="quote-niche__rule-line"></span>
+            <iconify-icon icon="lucide:car" class="quote-niche__rule-icon"></iconify-icon>
+            <span class="quote-niche__rule-line"></span>
+          </div>
+          <p class="quote-niche__attribution">— RIJVAARDIG VOORBEELD &nbsp;·&nbsp; AMSTERDAM &nbsp;·&nbsp; SINDS 2010</p>
+        </div>
+      </section>
+
+      <!-- ====== SERVICES SECTION (6 diensten) ====== -->
+      <section class="services-section" data-bg-color="var(--color-accent)">
+        <h2 class="services-heading">Onze opleidingen</h2>
+
+        <div class="services-grid">
+          <!-- Service 1: Rijlessen auto (B) -->
+          <div class="service-item">
+            <h4 class="service-title"><iconify-icon icon="lucide:car" style="color:var(--color-primary);font-size:1.5em;vertical-align:-0.2em;margin-right:0.4em"></iconify-icon>Rijlessen Auto (B)</h4>
+            <div class="service-desc">
+              <p>De klassieke autorijlessen voor je personenauto rijbewijs. Stap voor stap leer je alle vaardigheden om veilig en zelfstandig te rijden.</p>
+              <p>Van koppeling tot snelweg — op jouw tempo, met een vast instructeur die jouw sterke punten kent.</p>
+            </div>
+          </div>
+
+          <!-- Service 2: Spoedcursus -->
+          <div class="service-item">
+            <h4 class="service-title"><iconify-icon icon="lucide:zap" style="color:var(--color-primary);font-size:1.5em;vertical-align:-0.2em;margin-right:0.4em"></iconify-icon>Spoedcursus</h4>
+            <div class="service-desc">
+              <p>Snel je rijbewijs halen? Met onze intensieve opleiding rij je binnen 2 tot 3 weken af. Dagelijks lessen, maximale focus.</p>
+              <p>Ideaal voor wie snel resultaat wil zonder concessies aan kwaliteit en veiligheid.</p>
+            </div>
+          </div>
+
+          <!-- Service 3: Rijlessen motor (A) -->
+          <div class="service-item">
+            <h4 class="service-title"><iconify-icon icon="lucide:bike" style="color:var(--color-primary);font-size:1.5em;vertical-align:-0.2em;margin-right:0.4em"></iconify-icon>Rijlessen Motor (A)</h4>
+            <div class="service-desc">
+              <p>Droom je van de open weg op twee wielen? Onze motorinstructeurs leren je alles over balans, techniek en verkeersinzicht.</p>
+              <p>Van voertuigbeheersing op het oefenterrein tot veilig navigeren door het Amsterdamse verkeer.</p>
+            </div>
+          </div>
+
+          <!-- Service 4: Faalangsttraining -->
+          <div class="service-item">
+            <h4 class="service-title"><iconify-icon icon="lucide:heart" style="color:var(--color-primary);font-size:1.5em;vertical-align:-0.2em;margin-right:0.4em"></iconify-icon>Faalangsttraining</h4>
+            <div class="service-desc">
+              <p>Stress en spanning achter het stuur? Onze gecertificeerde faalangstcoaches helpen je om rijangst te overwinnen.</p>
+              <p>Met bewezen technieken bouw je stap voor stap je zelfvertrouwen op, zodat je ontspannen kunt rijden.</p>
+            </div>
+          </div>
+
+          <!-- Service 5: Opfriscursus -->
+          <div class="service-item">
+            <h4 class="service-title"><iconify-icon icon="lucide:refresh-cw" style="color:var(--color-primary);font-size:1.5em;vertical-align:-0.2em;margin-right:0.4em"></iconify-icon>Opfriscursus</h4>
+            <div class="service-desc">
+              <p>Lang niet gereden en het vertrouwen kwijt? Onze opfriscursus brengt je rijvaardigheid snel weer op peil.</p>
+              <p>Geen oordeel, alleen geduld. In een paar lessen rij je weer als vanouds — of beter.</p>
+            </div>
+          </div>
+
+          <!-- Service 6: Theorie-examen begeleiding -->
+          <div class="service-item">
+            <h4 class="service-title"><iconify-icon icon="lucide:book-open" style="color:var(--color-primary);font-size:1.5em;vertical-align:-0.2em;margin-right:0.4em"></iconify-icon>Theorie-examen Begeleiding</h4>
+            <div class="service-desc">
+              <p>Een goede theoretische basis is het fundament van veilig rijden. Wij bereiden je voor met oefenexamens en persoonlijke begeleiding.</p>
+              <p>Online oefenen, klassikale sessies en individuele uitleg — alles om in een keer te slagen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== SUCCESVERHALEN CAROUSEL ====== -->
+      <section class="work-section" data-bg-color="var(--color-bg)">
+        <h2 class="work-heading">Succesverhalen</h2>
+
+        <div class="carousel">
+          <div class="carousel-track">
+
+            <!-- Succesverhaal 1 -->
+            <div class="carousel-slide">
+              <a href="work.html" class="case-card">
+                <div class="case-card-image">
+                  <img src="images/project1.jpg" alt="Lisa geslaagd voor rijbewijs B in Amsterdam" style="width:100%;display:block;aspect-ratio:4/3;object-fit:cover">
+                </div>
+                <div class="case-card-info">
+                  <span>Lisa — Rijbewijs B</span>
+                  <span>Amsterdam</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Succesverhaal 2 -->
+            <div class="carousel-slide">
+              <a href="work.html" class="case-card">
+                <div class="case-card-image">
+                  <img src="images/project2.jpg" alt="Kevin geslaagd voor motorrijbewijs A in Amsterdam" style="width:100%;display:block;aspect-ratio:4/3;object-fit:cover">
+                </div>
+                <div class="case-card-info">
+                  <span>Kevin — Motorrijbewijs A</span>
+                  <span>Amsterdam</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Succesverhaal 3 -->
+            <div class="carousel-slide">
+              <a href="work.html" class="case-card">
+                <div class="case-card-image">
+                  <img src="images/kitchen.jpg" alt="Fatima geslaagd via spoedcursus in Amsterdam" style="width:100%;display:block;aspect-ratio:4/3;object-fit:cover">
+                </div>
+                <div class="case-card-info">
+                  <span>Fatima — Spoedcursus</span>
+                  <span>Amsterdam</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Succesverhaal 4 -->
+            <div class="carousel-slide">
+              <a href="work.html" class="case-card">
+                <div class="case-card-image">
+                  <img src="images/carousel.jpg" alt="Thomas geslaagd na faalangsttraining in Amsterdam" style="width:100%;display:block;aspect-ratio:4/3;object-fit:cover">
+                </div>
+                <div class="case-card-info">
+                  <span>Thomas — Faalangsttraining</span>
+                  <span>Amsterdam</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <a href="work.html" class="see-all-btn">
+          Bekijk alle verhalen <span class="arrow">&rarr;</span>
+        </a>
+      </section>
+
+      <!-- ====== FOOTER LOGO DIVIDER ====== -->
+      <div class="footer-logo-wrap">
+        <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <text x="720" y="160" text-anchor="middle" font-family="var(--font-display)" font-size="180" font-weight="900" fill="currentColor" opacity="0.15">RIJVAARDIG</text>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="grid-2">
+      <div>
+        <h2 class="footer-heading">
+          Samen naar jouw <span class="accent">rijbewijs</span>
+        </h2>
+      </div>
+      <div>
+        <div class="footer-contact">
+          <a href="mailto:info@rijvaardigvoorbeeld.nl">info@rijvaardigvoorbeeld.nl</a>
+          <a href="https://www.rijvaardigvoorbeeld.nl">www.rijvaardigvoorbeeld.nl</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RijVaardig Voorbeeld. Alle rechten voorbehouden.</span>
+      <div>
+        <a href="#">Privacy</a> &middot; <a href="#">Voorwaarden</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Main script -->
+  <script src="js/main.js"></script>
+
+  <!-- StudioLee credit badge -->
+  <a href="https://www.studiolee.nl" target="_blank" rel="nofollow noopener" style="position:fixed;bottom:14px;right:14px;z-index:9999;background:rgba(0,0,0,.85);color:#fff;padding:9px 18px;border-radius:99px;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,background .2s;display:inline-flex;align-items:center;gap:6px" onmouseover="this.style.transform='translateY(-2px)';this.style.background='#cdfb52';this.style.color='#0a0a0a'" onmouseout="this.style.transform='translateY(0)';this.style.background='rgba(0,0,0,.85)';this.style.color='#fff'">Speciaal gemaakt voor rijscholen door StudioLee.nl &nearr;</a>
+
+</body>
+</html>
